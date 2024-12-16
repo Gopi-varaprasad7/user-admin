@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+    <h1>Welcome</h1>
+    <div class="li-items">
+        <ul>
+            <a href="login.html"><li>Login</li></a>
+            <a href="register.html"><li>Register</li></a>
+        </ul>
+    </div>
+</div>
+   <div class="login-page">
+    <form id="form" onsubmit="validateLogin(event)">
+        <h1>Login Here</h1>
+        <label>Email</label><br/>
+        <input type="email" name="email" id="email"><br/>
+        <span class="error" id="emailError">Please enter a valid email</span><br/>
+        <label>Password</label><br/>
+        <input type="password" name="password" id="password"><br/>
+        <span class="error" id="passwordError">Password cannot be empty</span><br/>
+        <button type="submit">Login</button>
+    </form>
+   </div>
+    <script src="script.js"></script>
+</body>
+</html>
